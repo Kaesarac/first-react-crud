@@ -13,7 +13,7 @@ const database = mysql.createConnection({
     database: 'employeeSystem'
 });
 
-app.post('/create', (req, res) => {
+app.post('/', (req, res) => {
     const name = req.body.name;
     const age = req.body.age;
     const country = req.body.country;
